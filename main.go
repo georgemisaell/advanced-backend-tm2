@@ -15,10 +15,7 @@ type Person struct {
     Age  int
 }
 
-// TODO: Implementasikan fungsi berikut
 func safeStringLength(s *string) int {
-    // Return 0 jika string pointer adalah nil
-    // Return panjang string jika tidak nil
     if s == nil {
         return 0
     }
@@ -26,8 +23,6 @@ func safeStringLength(s *string) int {
 }
 
 func safeSliceLength(slice []int) int {
-    // Return 0 jika slice adalah nil
-    // Return panjang slice jika tidak nil
     if slice == nil {
         return 0
     }
@@ -45,8 +40,6 @@ func safeMapAccess(m map[string]int, key string) (int, bool) {
 }
 
 func safePrintPerson(p *Person) {
-    // Print "Person is nil" jika p adalah nil
-    // Print informasi person jika tidak nil
     if p == nil {
         fmt.Println("Person is nil")
     } else {
